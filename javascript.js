@@ -19,7 +19,7 @@ function myfunction(){
    // alert(userInput);
     if(currentChar!==userInput){
         errorCounter+=1;
-        var snd = new Audio('/assets/error_sound.wav');
+        var snd = new Audio('./assets/error_sound.wav');
         snd.play();
     }else{
         counter+=1;
@@ -35,6 +35,5 @@ const timer = setInterval(function() {
   console.log(count);
   if (count === 0) {
     clearInterval(timer);
-    console.log("Time's up!");
   }
 }, 1000);

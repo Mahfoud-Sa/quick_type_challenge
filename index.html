@@ -4,15 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Quick Type Challenge</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <center> <h1>
+
+
+  <div  id="header">  
+    <h1 id="header_title">
         Quick Type Challenge
-    </h1></center>  
-    <p  id="score">0</p>
-    <p align="right" id="text">بسمك اللهم نبدا يومنا والبسمه الحسناء فوق شفاهنا لا راس مال الغرب ينفعنا ولا فوضه شويعيا سخيا اتلدي بك يا محمد عزنا ونضامه الداعي لعيشنا لار راس مال الغرب ينفعنا ولا فوضه شويعيا سخيا اتلدي </p>
-    <p align="right" id="Demo"></p>
-   
+    </h1> 
+  </div>
+ 
+
+
+   <p style="display: inline;">Error: <p  id="score" style="display: inline;"> 0</p></p> <p style="display: inline;">Timer: <p style="display: inline;"id="timer">0</p></p>
+  
+  
+ 
+ <p>ايقاف الصوت<input id="mute"  value="true" type="checkbox"></p> 
+   <div id="text_container">
+    <p  
+      id="text">بسمك اللهم نبدا يومنا والبسمه الحسناء فوق شفاهنا لا راس مال الغرب ينفعنا ولا فوضه شويعيا سخيا اتلدي بك يا محمد عزنا ونضامه الداعي لعيشنا لار راس مال الغرب ينفعنا ولا فوضه شويعيا سخيا انت كشخص محترم تعرف الوضع اليمن السعودية البحرين المكلا حي العمال المتوكلين تقنيات فهرسيه ليست ذات معنئ حقيقي وانت ستكون مهتم بتلك المواضيع فسبحان الله حين تصبحون وحين تكون لا نعلم اين انتم اعلى الجمال تغار منا ماذا عينا اذا نزرنا هي نظره تنسئ الفواد وتسعد الروح المهنئ اتلدي </p>
+
+   </div>
+ <div id="help_text">
+   <p style="text-overflow: ellipsis;" id="Demo" ></p></div>
+
+   <div style="height: 10px;"></div>
     <div style="width: 100%; "  align="right" >
     <center>
          <textarea autofocus ='true' style="text-align: right;
@@ -22,12 +40,17 @@
         padding: 10px; 
         border: 1px solid #ccc; 
         border-radius: 5px; 
-        font-size: 16px;" 
+        font-size: 18px;" 
          id="value" 
          type="text" onkeyup="myfunction()"></textarea>
     </center>
    </div>
-   <p id="timer">0</p>
+   <div  id="footer">  
+    <h1>
+        this is a footer
+    </h1> 
+  </div>
+ 
     <script src="./javascript.js"></script>
 </body>
 </html>

@@ -4,7 +4,10 @@ function myfunction(){
     var text=document.getElementById('text').innerHTML;
     var currentChar=text.charAt(counter);
     var userInput=document.getElementById('value').value.slice(-1);
-    var helpText=document.getElementById('Demo').innerHTML=document.getElementById('Demo').innerHTML+currentChar;
+    
+    //var helpText=document.getElementById('Demo').innerHTML=document.getElementById('Demo').innerHTML+currentChar;
+    var mute=false;
+    var checkbox=document.getElementById('mute');
    //alert(currentChar);
    //alert(userInput);
    // alert(text);
@@ -14,14 +17,27 @@ function myfunction(){
         location.reload()
        // document.ref
     }
-    
+//      checkbox.addEventListener('change',function(){
+//           if(this.checkbox){
+//  mute=false
+//           }else{
+//            mute=true
+//           }
+//         })
    // alert(currentChar);
    // alert(userInput);
     if(currentChar!==userInput){
         errorCounter+=1;
-        var snd = new Audio('./assets/error_sound.wav');
+        if(
+          mute
+        )
+       { var snd = new Audio('./assets/error_sound.wav');
         snd.play();
+       }
+       
+       
     }else{
+      document.getElementById('Demo').innerHTML=document.getElementById('Demo').innerHTML+currentChar;
         counter+=1;
     }
     

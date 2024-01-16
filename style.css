@@ -1,0 +1,58 @@
+#header{
+    margin-bottom: 10px;
+    height: 20vh;
+    width: 100vw;
+    background-color: rgb(21, 66, 115);
+    color: white;
+    font-size: 30px;
+    text-align: center;
+
+
+}
+#footer{
+    
+    height: 20vh;
+    width: 100vw;
+    background-color: rgb(65, 118, 175);
+    color: white;
+
+    text-align: center;
+
+
+}
+#header_title{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    margin: 0;   
+        vertical-align: middle;
+
+}
+
+#text_container{
+    width: 80vw;
+    margin: auto;
+    padding: 20px;
+    background-color:rgb(237, 238, 233) ;
+  
+}
+#text {
+    text-align: right;
+    
+    margin: auto;
+    padding: 10px; 
+    font-size: 22px;
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+#help_text{
+   text-align: right;
+    width: 80%;   
+   word-wrap: break-word;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px; 
+   
+    
+    font-size: 18px;
+}
